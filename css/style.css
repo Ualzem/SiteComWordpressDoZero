@@ -1,0 +1,45 @@
+    /* Estilos Gerais */
+    
+    body {
+        font-family: "Montserrat";
+    }
+    /* Header */
+    
+    .header {
+        width: 100%;
+        background: #bef10e;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        /* boa pratica, sempre que for fixed colocar top:0 */
+    }
+    
+    .header_menu {
+        text-align: right;
+        /* alinha o menu a direita */
+    }
+    
+    .header_menu ul li {
+        display: inline-block;
+        /* Por padrão os ul e li são display block,um debaixo do outro
+    usamaos o inline para ficarem um do lado do outro*/
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    
+    .header_menu ul li a {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .1em;
+        font-size: 0.875em;
+        line-height: 20px;
+        padding: 10px 0;
+        /* Esse padding de 10px pra cima e pra baixo melora
+        a aréa de touch na hora de usar o site no cellular*/
+    }
+    
+    .header_menu ul li a:hover {
+        color: rgb(4, 7, 189);
+    }
+    /* Introdução */

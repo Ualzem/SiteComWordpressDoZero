@@ -3,6 +3,59 @@
     body {
         font-family: "Montserrat";
     }
+    
+    p {
+        font-size: 0.875em;
+        line-height: 20px;
+    }
+    
+    .btn {
+        border: 3px solid #bef10e;
+        padding: 10px 30px;
+        color: #bef10e;
+        font-size: 0.875em;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .1em;
+    }
+    
+    .btn:hover {
+        color: #FFF;
+        border-color: #FFF;
+    }
+    
+    .btn-preto:hover {
+        color: #000;
+        border-color: #000;
+    }
+    
+    .subtitulo {
+        font-size: 1.5em;
+        line-height: 30px;
+        font-weight: bold;
+        letter-spacing: .1em;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .subtitulo:after {
+        content: "";
+        /*Esse content: ""; sempre tem, senão não funciona*/
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #000;
+        margin: 8px auto;
+    }
+    
+    img {
+        display: block;
+        /*faz com que tire 1 espaço que todas as imagens tem por padrão.*/
+    }
+    /* HOME*/
     /* Header */
     
     .header {
@@ -12,6 +65,8 @@
         position: fixed;
         top: 0;
         /* boa pratica, sempre que for fixed colocar top:0 */
+        z-index: 10;
+        /* o z-index mantem o q tem no header por cima de tudo*/
     }
     
     .header_menu {
@@ -42,4 +97,257 @@
     .header_menu ul li a:hover {
         color: rgb(4, 7, 189);
     }
-    /* Introdução */
+    /* HOME - Introdução */
+    
+    .introducao {
+        width: 100%;
+        height: 380px;
+        background: url("../img/bg.jpg") no-repeat center;
+        background-size: cover;
+        margin-top: 92px;
+        /*essa margin-top é porque o menu é fixo e por isso esconde a introducao*/
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+    .introducao h1 {
+        font-size: 3em;
+        color: #FFF;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .quote-externo {
+        max-width: 340px;
+        margin: 0 auto;
+        /*como eu coloquei max-width, tenho que por margin: 0 auto
+        para conseguir alinhar o quote ao centro*/
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+    
+    .quote-externo p {
+        font-style: italic;
+    }
+    /*abaixo temos as pseudo-classes before e after que CRIA 1 ELEMENTO
+    ANTES E 1 ELEMENTO DEPOIS DA CLASSE p*/
+    
+    .quote-externo p:before,
+    .quote-externo p:after {
+        content: "";
+        /*Esse content: ""; sempre tem, senão não funciona*/
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #FFF;
+        margin: 14px auto 10px auto;
+    }
+    
+    .quote-externo cite {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.875em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    /* HOME - Produtos */
+    
+    .produtos {
+        padding: 60px 0;
+    }
+    
+    .produtos_lista li {
+        background: #BEF10E;
+        text-align: center;
+    }
+    
+    .produtos_lista li h3 {
+        font-weight: bold;
+        font-size: 1.125em;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-top: 20px;
+    }
+    
+    .produtos_lista li h3:after {
+        /*cria tracinho depois do h3*/
+        content: "";
+        /*Esse content: ""; sempre tem, senão não funciona*/
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #000;
+        margin: 2px auto;
+    }
+    
+    .produtos_lista li p {
+        padding: 10px 20px 20px 20px;
+    }
+    
+    .produtos_icone {
+        background: #000;
+        padding: 20px;
+    }
+    
+    .call {
+        clear: both;
+        /* se não usar esse comando o padding-top não funcionaria aqui*/
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+    .call p {
+        margin-bottom: 20px;
+    }
+    /* HOME - Portfólio*/
+    
+    .portfolio {
+        width: 100%;
+        background: #000;
+        padding: 40px 0;
+    }
+    
+    .portfolio .subtitulo {
+        color: #BEF10E;
+    }
+    
+    .portfolio .subtitulo:after {
+        background: #BEF10E;
+        /*traço debaixo do subtitulo*/
+    }
+    
+    .portfolio_lista li:last-child {
+        margin-top: 20px;
+        /* Pseudo-classe que seleciona so o ultimo item da lista*/
+    }
+    
+    .portfolio .call p {
+        color: #FFF;
+    }
+    /* HOME - Qualidade*/
+    
+    .qualidade {
+        padding: 60px 0;
+    }
+    
+    .qualidade:after {
+        /*pseudo-classe para colocar a imagem das linhas*/
+        content: "";
+        display: block;
+        /*acima os 2 itens obrigatorios*/
+        width: 634px;
+        height: 83px;
+        background: url("../img/linhas.png") no-repeat center;
+        position: absolute;
+        top: 209px;
+        right: 162px;
+        z-index: -1;
+        /* z-index: -1 garante que vai ficar por baixo de tudo;*/
+    }
+    
+    .qualidade img {
+        margin: 0 auto;
+        /* Alinha a imagem automagicamente*/
+    }
+    
+    .qualidade_lista {
+        padding-top: 20px;
+    }
+    
+    .qualidade_lista li {
+        text-align: center;
+        padding: 0 40px;
+    }
+    
+    .qualidade_lista li h3 {
+        font-weight: bold;
+        font-size: 1.125em;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-top: 20px;
+    }
+    
+    .qualidade_lista li h3:after {
+        /*cria tracinho depois do h3*/
+        content: "";
+        /*Esse content: ""; sempre tem, senão não funciona*/
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #000;
+        margin: 6px auto;
+    }
+    /* HOME - Quebra*/
+    
+    .quebra {
+        width: 100%;
+        height: 220px;
+        background: url("../img/bg-footer.jpg") no-repeat center;
+        background-size: cover;
+        text-align: center;
+    }
+    
+    .quebra .quote-externo {
+        max-width: 400px;
+        padding-top: 40px;
+    }
+    /* FOOTER */
+    
+    .footer {
+        width: 100%;
+        background: #000;
+        color: #FFF;
+        padding: 20px 0;
+    }
+    
+    .footer h3 {
+        font-size: 1.125em;
+        line-height: 25px;
+        color: #BEF10E;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .footer h3:after {
+        /*cria tracinho depois do h3*/
+        content: "";
+        /*Esse content: ""; sempre tem, senão não funciona*/
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #BEF10E;
+        margin: 6px 0 12px 0;
+    }
+    
+    .footer_historia {
+        padding-right: 90px;
+    }
+    
+    .footer_contato ul li {
+        font-size: 0.875em;
+        line-height: 20px;
+    }
+    
+    .footer_redes ul li {
+        display: inline-block;
+        /* display: inline-block - 1 do lado do outro*/
+        margin-right: 10px;
+    }
+    
+    .footer_redes ul li a {
+        border: 3px solid #bef10e;
+        display: block;
+        padding: 10px;
+    }
+    
+    .footer_redes ul li a:hover {
+        border-color: #FFF;
+    }
+    
+    .copy {
+        width: 100%;
+        background: #BEF10E;
+        padding: 20px 0;
+    }

@@ -5,7 +5,7 @@
     }
     
     p {
-        font-size: 0.875em;
+        font-size: 0.875rem;
         line-height: 20px;
     }
     
@@ -13,7 +13,7 @@
         border: 3px solid #bef10e;
         padding: 10px 30px;
         color: #bef10e;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         line-height: 20px;
         text-transform: uppercase;
         font-weight: bold;
@@ -31,7 +31,7 @@
     }
     
     .subtitulo {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         line-height: 30px;
         font-weight: bold;
         letter-spacing: .1em;
@@ -49,6 +49,26 @@
         height: 3px;
         background: #000;
         margin: 8px auto;
+    }
+    
+    .subtitulo-interno {
+        font-size: 1.5rem;
+        line-height: 30px;
+        font-weight: bold;
+        letter-spacing: .1em;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    .subtitulo-interno:after {
+        content: "";
+        /*Esse content: ""; sempre tem, senão não funciona*/
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #000;
+        margin: 8px 0;
     }
     
     img {
@@ -87,7 +107,7 @@
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: .1em;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         line-height: 20px;
         padding: 10px 0;
         /* Esse padding de 10px pra cima e pra baixo melora
@@ -95,6 +115,10 @@
     }
     
     .header_menu ul li a:hover {
+        color: rgb(4, 7, 189);
+    }
+    
+    .header_menu ul li a.menu-ativo {
         color: rgb(4, 7, 189);
     }
     /* HOME - Introdução */
@@ -111,7 +135,7 @@
     }
     
     .introducao h1 {
-        font-size: 3em;
+        font-size: 3rem;
         color: #FFF;
         font-weight: bold;
         text-transform: uppercase;
@@ -146,9 +170,35 @@
     .quote-externo cite {
         font-style: normal;
         font-weight: bold;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         letter-spacing: .1em;
         text-transform: uppercase;
+    }
+    /*Introdução interna - para as páginas*/
+    
+    .introducao-interna {
+        width: 100%;
+        margin-top: 92px;
+        height: 160px;
+        text-align: center;
+        color: #FFF;
+        padding-top: 30px;
+    }
+    
+    .introducao-interna h1 {
+        font-size: 2.25rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .introducao-interna h1:after {
+        content: "";
+        /*Esse content: ""; sempre tem, senão não funciona*/
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #FFF;
+        margin: 6px auto 10px auto;
     }
     /* HOME - Produtos */
     
@@ -163,7 +213,7 @@
     
     .produtos_lista li h3 {
         font-weight: bold;
-        font-size: 1.125em;
+        font-size: 1.125rem;
         line-height: 25px;
         text-transform: uppercase;
         letter-spacing: .1em;
@@ -253,6 +303,8 @@
     
     .qualidade_lista {
         padding-top: 20px;
+        overflow: auto;
+        /*esse overflow auto limpa essa tag e não deixa amontoar com o debaixo*/
     }
     
     .qualidade_lista li {
@@ -262,7 +314,7 @@
     
     .qualidade_lista li h3 {
         font-weight: bold;
-        font-size: 1.125em;
+        font-size: 1.125rem;
         line-height: 25px;
         text-transform: uppercase;
         letter-spacing: .1em;
@@ -303,7 +355,7 @@
     }
     
     .footer h3 {
-        font-size: 1.125em;
+        font-size: 1.125rem;
         line-height: 25px;
         color: #BEF10E;
         text-transform: uppercase;
@@ -326,7 +378,7 @@
     }
     
     .footer_contato ul li {
-        font-size: 0.875em;
+        font-size: 0.875rem;
         line-height: 20px;
     }
     

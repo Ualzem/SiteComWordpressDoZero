@@ -1,0 +1,26 @@
+.interna_sobre {
+    background: url("../img/bg-sobre.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.missao_sobre {
+    padding-top: 60px;
+}
+
+.missao_sobre p {
+    font-size: 1.125rem;
+    /*rem - tamanho em relação ao body(16px)*/
+    line-height: 25px;
+    margin-bottom: 1em;
+    /*em - tamanho em relação ao elemento pai(p)*/
+    margin-right: 80px;
+}
+
+.missao_sobre ul li {
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+.foto-street {
+    padding-top: 20px;
+}

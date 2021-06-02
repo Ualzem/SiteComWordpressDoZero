@@ -74,6 +74,8 @@
     img {
         display: block;
         /*faz com que tire 1 espaço que todas as imagens tem por padrão.*/
+        max-width: 100%;
+        /* max-width: 100%; - faz com que as imagend fiquem fluidas no responsivo*/
     }
     /* HOME*/
     /* Header */
@@ -209,6 +211,11 @@
     .produtos_lista li {
         background: #BEF10E;
         text-align: center;
+    }
+    
+    .produtos_lista li img {
+        margin: 0 auto;
+        /*centraliza*/
     }
     
     .produtos_lista li h3 {

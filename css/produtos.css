@@ -1,6 +1,7 @@
 .interna_produtos {
     background: url("../img/bg-produtos.jpg") no-repeat center;
     background-size: cover;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .produto_item {
@@ -162,7 +163,8 @@
     line-height: 30px;
 }
 
-.dados_email {
+.orcamento_dados span:nth-of-type(2) {
+    /*temos q usar esta classe no span para selecionar o 2º item*/
     margin-bottom: 40px;
 }
 

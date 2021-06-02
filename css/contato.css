@@ -1,0 +1,97 @@
+.interna_contato {
+    background: url("../img/bg-contato.jpg") no-repeat center;
+    background-size: cover;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+
+/* ORÇAMENTO*/
+
+.contato {
+    padding: 40px 0;
+}
+
+.contato-form {
+    padding-right: 60px;
+}
+
+.contato-form label {
+    display: block;
+    /*coloca 1 debaixo do outro*/
+    font-size: 1.125rem;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.contato-form input {
+    display: block;
+    width: 100%;
+    border: 4px solid #BEF10E;
+    background: none;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    /*tira a bordinha que aparecia quando clicamos para escrever dentro do input*/
+    font-size: 0.875rem;
+}
+
+.contato-form textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 4px solid #BEF10E;
+    background: none;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    /*tira a bordinha que aparecia quando clicamos para escrever dentro do input*/
+    font-size: 0.875rem;
+}
+
+.contato-form button {
+    background: none;
+    padding: 7px 40px;
+}
+
+.contato_dados h3 {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #BEF10E;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.contato_dados span {
+    display: block;
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+.contato_dados span:nth-of-type(even) {
+    margin-bottom: 30px;
+    /*no span tenho que usar esta classe para selecionar os pares*/
+}
+
+.contato_dados ul {
+    margin-top: 10px;
+}
+
+.contato_dados ul li {
+    display: inline-block;
+    /* display: inline-block - 1 do lado do outro*/
+    margin-right: 10px;
+}
+
+.contato_dados ul li a {
+    border: 3px solid #bef10e;
+    display: block;
+    padding: 10px;
+}
+
+.contato_dados ul li a:hover {
+    border-color: #000;
+}
+
+.contato-mapa {
+    margin-bottom: 60px;
+}

@@ -13,6 +13,8 @@
     <link rel='stylesheet' href='css/style.css'>
     <link rel='stylesheet' href='css/portfolio.css'>
     <link rel='stylesheet' href='css/responsivo.css'>
+    <!-- Abaixo temos o script do medernizr que tem que ficar no inicio, pq ele tem q carregar primeiro-->
+    <script src="js/libs/modernizr.custom.45655.js"></script>
 
     <!--fontes da net: -->
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -48,20 +50,50 @@
         </div>
     </section>
 
-    <section class="container">
-        <blockquote class="quote-clientes">
-            <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."</p>
-            <cite>Loren Ypsiunm</cite>
-        </blockquote>
+    <section class="container animar-interno">
+        <!-- Lista de quotes que vão aparecer nos slides JS de depoimentos-->
+        <ul class="rslides">
+            <li>
+                <blockquote class="quote-clientes">
+                    <p>"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour."</p>
+                    <cite>Loren Ypsiunm</cite>
+                </blockquote>
+            </li>
+            <li>
+                <blockquote class="quote-clientes">
+                    <p>"A handful of model sentence structures. The generated Lorem Ipsum is therefore repetition, injected humour, or non-characteristic words ."</p>
+                    <cite>Yves Luptan</cite>
+                </blockquote>
+            </li>
+            <li>
+                <blockquote class="quote-clientes">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."</p>
+                    <cite>Takeshi Ironi</cite>
+                </blockquote>
+            </li>
+        </ul>
     </section>
 
 
     <section class="portfolio">
         <div class="container">
-            <ul class="portfolio_lista">
-                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Ualzem Retro"></li>
-                <li class="grid-8"><img src="img/portfolio/aventura.jpg" alt="Ualzem Aventura"></li>
-                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Ualzem Esporte"></li>
+            <!-- LISTA PARA SLIDES DE FOTOS PLUGIN -->
+            <ul class="portfolio_lista rslides_portfolio">
+                <li>
+                    <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Ualzem Retro"></div>
+                    <div class="grid-8"><img src="img/portfolio/aventura.jpg" alt="Ualzem Aventura"></div>
+                    <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Ualzem Esporte"></div>
+                </li>
+                <li>
+                    <div class="grid-8"><img src="img/portfolio/retro2.jpg" alt="Ualzem Retro 2"></div>
+                    <div class="grid-8"><img src="img/portfolio/aventura2.jpg" alt="Ualzem Aventura 2"></div>
+                    <div class="grid-16"><img src="img/portfolio/esporte2.jpg" alt="Ualzem Esporte 2"></div>
+                </li>
+                <li>
+                    <div class="grid-8"><img src="img/portfolio/retro3.jpg" alt="Ualzem Retro 3"></div>
+                    <div class="grid-8"><img src="img/portfolio/aventura3.jpg" alt="Ualzem Aventura 3"></div>
+                    <div class="grid-16"><img src="img/portfolio/esporte3.jpg" alt="Ualzem Esporte 3"></div>
+                </li>
             </ul>
         </div>
     </section>
@@ -119,6 +151,21 @@
         </div>
 
     </footer>
+
+
+    <!-- INICIO JAVASCRIPT -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        window.jQuery || document.write('<script src="js/libs/jquery-1.11.3.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- FIM JAVASCRIPT -->
+
+
 
 </body>
 

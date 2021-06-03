@@ -18,6 +18,8 @@
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: .1em;
+        transition: all .5s ease;
+        /* all .5s ease - transição em todos com tempo de meio segundo e suave*/
     }
     
     .btn:hover {
@@ -114,6 +116,8 @@
         padding: 10px 0;
         /* Esse padding de 10px pra cima e pra baixo melora
         a aréa de touch na hora de usar o site no cellular*/
+        transition: all .5s ease;
+        /* all .5s ease - transição em todos com tempo de meio segundo e suave*/
     }
     
     .header_menu ul li a:hover {
@@ -274,7 +278,7 @@
         /*traço debaixo do subtitulo*/
     }
     
-    .portfolio_lista li:last-child {
+    .portfolio_lista div:last-of-type {
         margin-top: 20px;
         /* Pseudo-classe que seleciona so o ultimo item da lista*/
     }
@@ -410,3 +414,54 @@
         background: #BEF10E;
         padding: 20px 0;
     }
+    /*  INICIO DAS ANIMAÇÕES (do site animate.css)*/
+    
+    .js .introducao h1,
+    .js .introducao blockquote,
+    .js .introducao .btn,
+    .js .animar,
+    .js .introducao-interna h1,
+    .js .introducao-interna p,
+    .js .animar-interno {
+        /* ESSE .js É A CLASSE DO medernizr*/
+        opacity: 0;
+    }
+    
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both
+    }
+    
+    @-webkit-keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0)
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none
+        }
+    }
+    
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0)
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none
+        }
+    }
+    
+    .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown
+    }
+    /*  FINAL DAS ANIMAÇÕES (do site animate.css)*/

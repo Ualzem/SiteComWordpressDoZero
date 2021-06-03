@@ -12,11 +12,13 @@
     <link rel='stylesheet' href='css/grid.css'>
     <link rel='stylesheet' href='css/style.css'>
     <link rel='stylesheet' href='css/responsivo.css'>
+    <!-- Abaixo temos o script do medernizr que tem que ficar no inicio, pq ele tem q carregar primeiro-->
+    <script src="js/libs/modernizr.custom.45655.js"></script>
 
     <!--fontes da net: -->
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-    <script src='main.js'></script>
+
 </head>
 
 <body>
@@ -51,7 +53,8 @@
         </div>
     </section>
 
-    <section class="produtos container">
+    <section class="produtos container animar">
+        <!--animar é a classe de animação js quando entramos na página-->
         <!-- Como esta seção não tem fundo ja posso por o container aqui no inicio da section-->
         <!-- E o tamanho do container foi definido no css grid (960px)-->
         <h2 class="subtitulo">Produtos</h2>
@@ -94,11 +97,11 @@
     <section class="portfolio">
         <div class="container">
             <h2 class="subtitulo">Portfólio</h2>
-            <ul class="portfolio_lista">
-                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Ualzem Retro"></li>
-                <li class="grid-8"><img src="img/portfolio/aventura.jpg" alt="Ualzem Aventura"></li>
-                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Ualzem Esporte"></li>
-            </ul>
+            <div class="portfolio_lista">
+                <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Ualzem Retro"></div>
+                <div class="grid-8"><img src="img/portfolio/aventura.jpg" alt="Ualzem Aventura"></div>
+                <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Ualzem Esporte"></div>
+            </div>
 
             <div class="call">
                 <p>Clique aqui e conheça o nosso portfólio</p>
@@ -195,6 +198,17 @@
         </div>
 
     </footer>
+
+    <!-- INICIO JAVASCRIPT -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        window.jQuery || document.write('<script src="js/libs/jquery-1.11.3.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- FIM JAVASCRIPT -->
+
 
 </body>
 

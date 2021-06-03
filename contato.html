@@ -13,6 +13,8 @@
     <link rel='stylesheet' href='css/style.css'>
     <link rel='stylesheet' href='css/contato.css'>
     <link rel='stylesheet' href='css/responsivo.css'>
+    <!-- Abaixo temos o script do medernizr que tem que ficar no inicio, pq ele tem q carregar primeiro-->
+    <script src="js/libs/modernizr.custom.45655.js"></script>
 
     <!--fontes da net: -->
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -52,7 +54,7 @@
 
 
 
-    <section class="contato container">
+    <section class="contato container animar-interno">
 
         <form id="form_orcamento" class="contato-form grid-8">
             <label for="nome">Nome</label>
@@ -143,6 +145,19 @@
         </div>
 
     </footer>
+
+
+    <!-- INICIO JAVASCRIPT -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        window.jQuery || document.write('<script src="js/libs/jquery-1.11.3.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- FIM JAVASCRIPT -->
+
+
 
 </body>
 

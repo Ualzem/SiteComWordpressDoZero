@@ -4,15 +4,27 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ualzem Games - Produtos</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ualzem Games - Produtos Especiais</title>
+    <meta name="description" content="Possuímos uma infinita gama de produtos, os melhores nacionais e
+    importados de ótima procedência.">
 
-    <link rel='stylesheet' href='css/normalize.css'>
-    <link rel='stylesheet' href='css/reset.css'>
-    <link rel='stylesheet' href='css/grid.css'>
-    <link rel='stylesheet' href='css/style.css'>
-    <link rel='stylesheet' href='css/produtos.css'>
-    <link rel='stylesheet' href='css/responsivo.css'>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ualzem Games - Produtos Especiais" />
+    <meta property="og:description" content="Possuímos uma infinita gama de produtos, os melhores nacionais e
+    importados de ótima procedência." />
+    <meta property="og:url" content="http://ualzemgames.com/produtos.html" />
+    <meta property="og:image" content="http://ualzemgames.com/img/og-image.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel='stylesheet' type='text/css' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/grid.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/produtos.css'>
+    <link rel='stylesheet' type='text/css' href='css/responsivo.css'>
     <!-- Abaixo temos o script do medernizr que tem que ficar no inicio, pq ele tem q carregar primeiro-->
     <script src="js/libs/modernizr.custom.45655.js"></script>
 
@@ -64,7 +76,7 @@
             <img src="img/produtos/aventura2.jpg" alt=" Ualzem Aventura 2">
         </div>
         <div class="grid-8 produto_info">
-            <p>It was popularised in the 1960s with LA Lorem Ipsum passages, and desktop u publishing or software Pager including versions of Lorem Ipsum.</p>
+            <p>Jogos de Ação e Aventura sempre foram grandes sucessos, em todos os consoles existentes. Por isso temos um grande e variado número de títulos.</p>
             <ul>
                 <li>Ação</li>
                 <li>Survivor</li>
@@ -89,7 +101,7 @@
             <img src="img/produtos/esporte2.jpg" alt=" Ualzem Esporte 2">
         </div>
         <div class="grid-8 produto_info">
-            <p>It was popularised in the 1960s with LA Lorem Ipsum passages, and desktop u publishing or software Pager including versions of Lorem Ipsum.</p>
+            <p>Muito populares hoje em dia principalmente por causa dos jogos de futebol, que possuem uma jogabilidade incrível, além de outros esportes.</p>
             <ul>
                 <li>Luta</li>
                 <li>Futebol</li>
@@ -115,7 +127,7 @@
             <img src="img/produtos/retro2.jpg" alt=" Ualzem Retro 2">
         </div>
         <div class="grid-8 produto_info">
-            <p>It was popularised in the 1960s with LA Lorem Ipsum passages, and desktop u publishing or software Pager including versions of Lorem Ipsum.</p>
+            <p>E quem não gosta de um jogo clássico das antigas? Aqui na Ualzem Games, você encontra uma infinidade de títulos pra você matar a saudade.</p>
             <ul>
                 <li>Arcade</li>
                 <li>Plataforma</li>
@@ -131,17 +143,28 @@
         <div class="container">
             <h2 class="subtitulo">Orçamento</h2>
 
-            <form id="form_orcamento" class="form grid-8">
+
+            <!-- Parte de envio do nosso formulário de contato -->
+            <form action="enviar.php" method="post" name="form" class="formphp form grid-8">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <input id="nome" name="nome" type="text">
                 <label for="email">E-mail</label>
-                <input type="email" id="email">
+                <input id="email" name="email" type="text">
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
-                <label for="espec">Detalhes</label>
-                <textarea type="text" id="mensagem"></textarea>
-                <button type="submit" class="btn">Enviar</button>
+                <input id="telefone" name="telefone" type="text">
+
+                <!-- CÓDIGO ANTI ENVIO DE SPAM POR ROBÔS-->
+                <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+                <input type="text" class="nao-aparece" name="leaveblank">
+                <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+                <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+                <label for="mensagem">Especificações</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+
+                <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
             </form>
+
 
             <div class="orcamento_dados grid-8">
                 <h3>Dados</h3>

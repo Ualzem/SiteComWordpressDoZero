@@ -79,6 +79,31 @@
         max-width: 100%;
         /* max-width: 100%; - faz com que as imagend fiquem fluidas no responsivo*/
     }
+    /*----------------------------------------------------------------*/
+    /*  INICIO Estilo geral formulário de envio do contato*/
+    
+    .formphp label.nao-aparece,
+    .formphp input.nao-aparece {
+        display: none !important;
+    }
+    
+    #form-erro span,
+    #form-send span {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    
+    #form-send {
+        color: #31aa39;
+    }
+    
+    #form-erro {
+        color: #f64540;
+    }
+    /*  FIM Estilo geral formulário de envio do contato*/
+    /*----------------------------------------------------------------*/
     /* HOME*/
     /* Header */
     
